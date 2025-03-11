@@ -1,0 +1,17 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-top: 171px;
+  padding-bottom: 32px;
+}
+
+.footer__copyright {
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.footer__year {
+  margin: 0 auto;
+  font-size: 16px;
+}

@@ -1,0 +1,27 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.header__title-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__logo {
+  width: 50px;
+  height: 50px;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  margin-right: 20px;
+}
