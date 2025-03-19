@@ -1,13 +1,20 @@
 import React from "react";
 import "./pokemonCard.css";
 
-const PokemonCard = ({ pokemon }) => {
+const PokemonCard = ({ pokemon, loading }) => {
+  if (loading) {
+    return (
+      //put a default loading card here
+      <div></div>
+    );
+  }
+
   if (!pokemon) return null;
   const types = pokemon.types.map((typeInfo) => typeInfo.type.name).join(", ");
   const abilities = pokemon.abilities
     .map((abilityInfo) => abilityInfo.ability.name)
     .join(", ");
-  const { generation, description, id } = pokemon;
+  const { id } = pokemon;
 
   return (
     <div className="pokemon__card">
@@ -18,10 +25,8 @@ const PokemonCard = ({ pokemon }) => {
         <h2 className="pokemon__card_name">
           {pokemon.name} (#{id})
         </h2>
-        <p className="pokemon-card__description">{description}</p>
-        <p className="pokemon-card__generation">Generation: {generation}</p>
-        <p className="pokemon-card__type">Type: {types}</p>
-        <p className="pokemon-card__ability">Abilities: {abilities}</p>
+        <p className="pokemon_card__type">Type: {types}</p>
+        <p className="pokemon_card__ability">Abilities: {abilities}</p>
       </div>
     </div>
   );
