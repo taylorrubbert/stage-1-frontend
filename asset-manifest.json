@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/taylorrubbert/stage-1-frontend-and-api/static/css/main.2291358c.css",
-    "main.js": "/taylorrubbert/stage-1-frontend-and-api/static/js/main.0bd71758.js",
-    "static/media/pokeball.svg": "/taylorrubbert/stage-1-frontend-and-api/static/media/pokeball.499612a7b5342abac926a67c13deb442.svg",
-    "index.html": "/taylorrubbert/stage-1-frontend-and-api/index.html",
-    "main.2291358c.css.map": "/taylorrubbert/stage-1-frontend-and-api/static/css/main.2291358c.css.map",
-    "main.0bd71758.js.map": "/taylorrubbert/stage-1-frontend-and-api/static/js/main.0bd71758.js.map"
+    "main.css": "/taylorrubbert/stage-1-frontend/static/css/main.2291358c.css",
+    "main.js": "/taylorrubbert/stage-1-frontend/static/js/main.e0097c32.js",
+    "static/media/pokeball.svg": "/taylorrubbert/stage-1-frontend/static/media/pokeball.499612a7b5342abac926a67c13deb442.svg",
+    "index.html": "/taylorrubbert/stage-1-frontend/index.html",
+    "main.2291358c.css.map": "/taylorrubbert/stage-1-frontend/static/css/main.2291358c.css.map",
+    "main.e0097c32.js.map": "/taylorrubbert/stage-1-frontend/static/js/main.e0097c32.js.map"
   },
   "entrypoints": [
     "static/css/main.2291358c.css",
-    "static/js/main.0bd71758.js"
+    "static/js/main.e0097c32.js"
   ]
 }
