@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PokemonCard from "../PokemonCard/PokemonCard";
 import SearchBar from "../SearchBar/SearchBar";
+import "./main.css";
 import { getPokemonData1, getPokemonData2 } from "../../utils/pokeAPI";
 
 const Main = ({

@@ -1,0 +1,12 @@
+.pokemon__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 500px);
+  justify-content: center;
+  gap: 70px; /* Space between columns */
+}
+
+.pokemon__grid-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
