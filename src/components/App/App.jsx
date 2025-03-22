@@ -10,6 +10,7 @@ import PokemonCard from "../PokemonCard/PokemonCard";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import News from "../News/News";
+import Main from "../Main/Main";
 import "./app.css";
 
 function App() {
@@ -53,39 +54,9 @@ function App() {
       <div className="app__container">
         <Header />
         <Routes>
-          <Route path="/" element={SearchBar} />
-          <Route path="/News" element={<News></News>} />
+          <Route path="/" element={<Main />} />
+          <Route path="/News" element={<News />} />
         </Routes>
-        <table className="app__table">
-          <tbody>
-            <tr>
-              <td>
-                <SearchBar
-                  onSearch={(e) => {
-                    e.preventDefault();
-                    const pokemonName =
-                      e.target.elements.pokemonName.value.trim();
-                    if (pokemonName) fetchPokemonData1(pokemonName);
-                  }}
-                />
-                {pokemonData1 && <PokemonCard pokemon={pokemonData1} />}
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <SearchBar
-                  onSearch={(e) => {
-                    e.preventDefault();
-                    const pokemonName =
-                      e.target.elements.pokemonName.value.trim();
-                    if (pokemonName) fetchPokemonData2(pokemonName);
-                  }}
-                />
-                {pokemonData2 && <PokemonCard pokemon={pokemonData2} />}
-              </td>
-            </tr>
-          </tbody>
-        </table>
       </div>
       <Footer />
     </div>
