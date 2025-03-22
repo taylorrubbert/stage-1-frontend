@@ -1,7 +1,7 @@
 {
   "name": "stage-1-frontend",
   "version": "0.1.0",
-  "homepage": "https://github.com/taylorrubbert/stage-1-frontend-and-api",
+  "homepage": "https://github.com/taylorrubbert/stage-1-frontend",
   "private": false,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

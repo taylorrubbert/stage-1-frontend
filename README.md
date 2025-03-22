@@ -7,4 +7,5 @@ With this front end application you can find a fun way to search pokemon and com
 This project utilizes API calls, routes, and general css styling
 
 PokeCompare utilized PokeAPI
+
 Github pages: https://github.com/taylorrubbert/stage-1-frontend-and-api
