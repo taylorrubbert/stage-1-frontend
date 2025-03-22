@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -6,7 +6,7 @@ import News from "../News/News";
 import Main from "../Main/Main";
 import "./app.css";
 
-const App = ({}) => {
+const App = () => {
   return (
     <div className="app">
       <div className="app__container">

@@ -1,4 +1,4 @@
-import news from "./news.css";
+import "./news.css";
 
 function latestNews() {
   return (
