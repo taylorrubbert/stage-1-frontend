@@ -1,8 +1,8 @@
 {
   "name": "stage-1-frontend",
   "version": "0.1.0",
-  "homepage": "https://github.com/taylorrubbert/stage-1-frontend",
-  "private": false,
+  "homepage": "https://taylorrubbert.github.io/stage-1-frontend/",
+  "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
