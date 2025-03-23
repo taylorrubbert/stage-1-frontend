@@ -8,4 +8,4 @@ This project utilizes API calls, routes, and general css styling
 
 PokeCompare utilized PokeAPI
 
-Github pages: https://github.com/taylorrubbert/stage-1-frontend-and-api
+Github pages: https://taylorrubbert.github.io/stage-1-frontend/
