@@ -1,45 +1,16 @@
-import React, { useState } from "react";
-import { getPokemonData1, getPokemonData2 } from "../../utils/pokeAPI";
+import React from "react";
 import PokemonCard from "../PokemonCard/PokemonCard";
 import SearchBar from "../SearchBar/SearchBar";
 import "./main.css";
 
-function Main() {
-  const [pokemonData1, setPokemonData1] = useState(null);
-  const [loading1, setLoading1] = useState(false);
-  const [pokemonData2, setPokemonData2] = useState(null);
-  const [loading2, setLoading2] = useState(false);
-
-  const fetchPokemonData1 = async (pokemon) => {
-    setPokemonData1(null);
-    setLoading1(true);
-    try {
-      const data = await getPokemonData1({ pokemon });
-      console.log(data);
-      setPokemonData1(data);
-      console.log(pokemonData1);
-    } catch (err) {
-      window.alert("Try a different name or ID.");
-    } finally {
-      setLoading1(false);
-    }
-  };
-
-  const fetchPokemonData2 = async (pokemon) => {
-    setPokemonData2(null);
-    setLoading2(true);
-    try {
-      const data = await getPokemonData2({ pokemon });
-      console.log(data);
-      setPokemonData2(data);
-      console.log(pokemonData1);
-    } catch (err) {
-      window.alert("Try a different name or ID.");
-    } finally {
-      setLoading2(false);
-    }
-  };
-
+const Main = ({
+  fetchPokemonData1,
+  pokemonData1,
+  loading1,
+  fetchPokemonData2,
+  pokemonData2,
+  loading2,
+}) => {
   return (
     <div className="pokemon__grid">
       <div className="pokemon__grid-column">
@@ -68,6 +39,6 @@ function Main() {
       </div>
     </div>
   );
-}
+};
 
 export default Main;
