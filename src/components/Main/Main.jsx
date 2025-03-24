@@ -12,8 +12,8 @@ const Main = ({
   loading2,
 }) => {
   return (
-    <div className="pokemon__grid">
-      <div className="pokemon__grid-column">
+    <div className="pokemon-grid">
+      <div className="pokemon-grid__column">
         <SearchBar
           onSearch={(e) => {
             e.preventDefault();
@@ -25,7 +25,7 @@ const Main = ({
           <PokemonCard pokemon={pokemonData1} loading={loading1} />
         )}
       </div>
-      <div className="pokemon__grid-column">
+      <div className="pokemon-grid__column">
         <SearchBar
           onSearch={(e) => {
             e.preventDefault();

@@ -1,4 +1,4 @@
-.pokemon__grid {
+.pokemon-grid {
   display: grid;
   grid-template-columns: repeat(2, 500px);
   justify-content: center;
@@ -7,7 +7,7 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .pokemon__grid {
+  .pokemon-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .pokemon__grid {
+  .pokemon-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +25,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .pokemon__grid {
+  .pokemon-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
