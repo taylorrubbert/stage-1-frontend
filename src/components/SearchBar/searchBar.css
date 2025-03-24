@@ -28,6 +28,10 @@
   font-weight: 500;
 }
 
+.search-bar__input:focus {
+  border-color: #007bff;
+}
+
 .search-bar__button {
   padding: 10px 20px;
   background-color: #007bff;
