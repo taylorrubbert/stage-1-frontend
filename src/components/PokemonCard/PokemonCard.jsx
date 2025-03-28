@@ -17,16 +17,16 @@ const PokemonCard = ({ pokemon, loading }) => {
   const { id } = pokemon;
 
   return (
-    <div className="pokemon__card">
-      <div className="pokemon__card_image">
+    <div className="pokemon-card">
+      <div className="pokemon-card__image">
         <img src={pokemon.sprites.front_default} alt={pokemon.name} />
       </div>
-      <div className="pokemon__card_info">
-        <h2 className="pokemon__card_name">
+      <div className="pokemon-card__info">
+        <h2 className="pokemon-card__name">
           {pokemon.name} (#{id})
         </h2>
-        <p className="pokemon_card__type">Type: {types}</p>
-        <p className="pokemon_card__ability">Abilities: {abilities}</p>
+        <p className="pokemon-card__type">Type: {types}</p>
+        <p className="pokemon-card__ability">Abilities: {abilities}</p>
       </div>
     </div>
   );

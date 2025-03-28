@@ -2,17 +2,18 @@
   display: flex;
   justify-content: space-between;
   font-size: 16px;
-  margin-top: 200px;
+  padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .footer__copyright {
-  margin: 0 auto;
+  margin-left: 50px;
   font-size: 16px;
 }
 
 .footer__year {
-  margin: 0 auto;
+  margin-right: 50px;
   font-size: 16px;
 }

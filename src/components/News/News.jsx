@@ -1,9 +1,9 @@
-import news from "./news.css";
+import "./news.css";
 
 function latestNews() {
   return (
     <div className="news">
-      <h1 className="news__title">Latest News</h1>
+      <h2 className="news__title">Latest News</h2>
       <section className="news__container scrollable">
         <h2 className="news__subtitle">Pokemon Legends: Z-A</h2>
         <p className="news__text">

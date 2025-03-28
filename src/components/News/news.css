@@ -7,8 +7,11 @@
   padding: 20px;
   border-radius: 8px;
   box-shadow: 10px 7px 5px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  height: 90%;
 }
+
 .scrollable {
   overflow-y: scroll;
   max-height: 700px;
@@ -30,14 +33,54 @@
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .news__text {
   font-size: 16px;
   margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .news__date {
   font-size: 14px;
   color: #888;
+}
+@media screen and (max-width: 1200px) {
+  .news {
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .news__container {
+    padding: 10px;
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .news {
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .news__container {
+    padding: 10px;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .news {
+    padding: 10px;
+    max-width: 400px;
+  }
+
+  .news__container {
+    padding: 10px;
+    max-width: 400px;
+  }
 }
