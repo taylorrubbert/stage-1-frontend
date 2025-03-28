@@ -10,6 +10,8 @@ const SearchBar = ({ onSearch }) => {
           type="text"
           placeholder="Enter a Pokemon name or ID"
           className="search-bar__input"
+          minLength="1"
+          maxLength="20"
           required
         />
         <button type="submit" className="search-bar__button">

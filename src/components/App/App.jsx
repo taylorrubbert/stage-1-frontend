@@ -4,7 +4,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import News from "../News/News";
 import Main from "../Main/Main";
-import { getPokemonData1, getPokemonData2 } from "../../utils/pokeAPI";
+import getPokemonData from "../../utils/pokeAPI";
 import "./app.css";
 
 function App() {
@@ -12,33 +12,31 @@ function App() {
   const [loading1, setLoading1] = useState(false);
   const [pokemonData2, setPokemonData2] = useState(null);
   const [loading2, setLoading2] = useState(false);
-  const fetchPokemonData1 = async (pokemon) => {
-    setPokemonData1(null);
-    setLoading1(true);
-    try {
-      const data = await getPokemonData1({ pokemon });
-      console.log(data);
-      setPokemonData1(data);
-      console.log(pokemonData1);
-    } catch (err) {
-      window.alert("Try a different name or ID.");
-    } finally {
-      setLoading1(false);
-    }
-  };
+  const [side, setSide] = useState(true);
 
-  const fetchPokemonData2 = async (pokemon) => {
-    setPokemonData2(null);
-    setLoading2(true);
+  const fetchPokemonData = async (pokemon, side) => {
+    setSide(side);
+    if (side === "Left") {
+      setLoading1(true);
+    } else {
+      setLoading2(true);
+    }
     try {
-      const data = await getPokemonData2({ pokemon });
-      console.log(data);
-      setPokemonData2(data);
-      console.log(pokemonData1);
+      const data = await getPokemonData({ pokemon });
+      if (side === "Left") {
+        setPokemonData1(data);
+      } else if (side === "Right") {
+        const data = await getPokemonData({ pokemon });
+        setPokemonData2(data);
+      }
     } catch (err) {
       window.alert("Try a different name or ID.");
     } finally {
-      setLoading2(false);
+      if (side === "Left") {
+        setLoading1(false);
+      } else {
+        setLoading2(false);
+      }
     }
   };
 
@@ -51,12 +49,12 @@ function App() {
             path="/"
             element={
               <Main
-                fetchPokemonData1={fetchPokemonData1}
+                fetchPokemonData={fetchPokemonData}
                 pokemonData1={pokemonData1}
                 loading1={loading1}
-                fetchPokemonData2={fetchPokemonData2}
                 pokemonData2={pokemonData2}
                 loading2={loading2}
+                side={side}
               />
             }
           />

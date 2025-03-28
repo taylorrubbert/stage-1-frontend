@@ -4,10 +4,9 @@ import SearchBar from "../SearchBar/SearchBar";
 import "./main.css";
 
 const Main = ({
-  fetchPokemonData1,
+  fetchPokemonData,
   pokemonData1,
   loading1,
-  fetchPokemonData2,
   pokemonData2,
   loading2,
 }) => {
@@ -18,7 +17,7 @@ const Main = ({
           onSearch={(e) => {
             e.preventDefault();
             const pokemonName = e.target.elements.pokemonName.value.trim();
-            if (pokemonName) fetchPokemonData1(pokemonName);
+            if (pokemonName) fetchPokemonData(pokemonName, "Left");
           }}
         />
         {pokemonData1 && (
@@ -30,7 +29,7 @@ const Main = ({
           onSearch={(e) => {
             e.preventDefault();
             const pokemonName = e.target.elements.pokemonName.value.trim();
-            if (pokemonName) fetchPokemonData2(pokemonName);
+            if (pokemonName) fetchPokemonData(pokemonName, "Right");
           }}
         />
         {pokemonData2 && (
